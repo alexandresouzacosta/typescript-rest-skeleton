@@ -1,0 +1,32 @@
+{
+  "name": "typescript-rest-skeleton",
+  "version": "1.0.0",
+  "description": "Skeleton for API based projects written in typescript and Mongoose",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "lint": "tslint ./src/**/*.ts ./test/**/*.ts",
+    "prebuild": "rm -rf ./dist",
+    "build": "node_modules/.bin/tsc"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "lodash": "^4.17.11",
+    "mongoose": "^5.5.6",
+    "typescript-rest": "^2.0.0"
+  },
+  "devDependencies": {
+    "@types/es6-promise": "^3.3.0",
+    "@types/express": "^4.16.1",
+    "@types/lodash": "^4.14.123",
+    "@types/mongoose": "^5.3.25",
+    "tslint": "^5.12.0",
+    "tslint-config-prettier": "^1.17.0",
+    "ts-node": "3.3.0",
+    "typescript": "^3.4.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "engineStrict": true
+}
